@@ -1,0 +1,15 @@
+{
+  "name": "expedia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saleh Albuga",
+  "license": "ISC",
+  "dependencies": {
+    "ect": "^0.5.9",
+    "express": "^4.14.1"
+  }
+}
