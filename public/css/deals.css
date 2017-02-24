@@ -1,0 +1,123 @@
+#header{
+    min-height: 60px;
+    background-color: #ed8323
+}
+
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+#sidebar {
+    margin: auto;
+    float: left;
+    width: 30%;
+}
+
+#content-wrap {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: auto; 
+    overflow: auto;
+}  
+
+.booking-item-price {
+  font-size: 40px;
+  color: #626262;
+  line-height: 1em;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+
+.booking-item:hover .booking-item-img-wrap .booking-item-img-num,
+.booking-item.active .booking-item-img-wrap .booking-item-img-num {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  background: rgba(0,0,0,0.5);
+}
+
+.booking-item-img-wrap {
+  position: relative;
+}
+.booking-item-img-wrap .booking-item-img-num {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.01);
+  padding: 5px 7px;
+  font-size: 13px;
+  line-height: 1em;
+}
+.booking-item-img-wrap .booking-item-img-num > .fa {
+  margin-right: 3px;
+}
+
+.booking-item-rating {
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #f7f7f7;
+  display: inline-block;
+}
+.booking-item-rating .booking-item-rating-stars {
+  display: inline-block;
+  margin-right: 17px;
+  margin-bottom: -5px;
+  color: #ed8323;
+}
+.booking-item-rating .booking-item-rating-stars .fa {
+  margin-right: 0;
+}
+.booking-item-rating .booking-item-rating-number {
+  margin-right: 7px;
+}
+.booking-item-rating .booking-item-rating-number > b {
+  font-size: 25px;
+}
+.booking-item-address {
+  line-height: 1em;
+  font-size: 13px;
+}
+
+booking-item-meta .booking-item-rating-number {
+  font-size: 20px;
+}
+.booking-item-meta .booking-item-rating-number b {
+  font-size: 30px;
+}
+
+.booking-item.booking-item-small .booking-item-title {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.booking-item-title {
+  margin-bottom: 7px;
+}
+
+
+.booking-item {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 17px;
+  border: 1px solid #e6e6e6;
+  color: #737373;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}

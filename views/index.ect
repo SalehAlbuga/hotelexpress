@@ -1,1 +1,64 @@
+<html>
+<head>
+
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <!--<link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/style-sheet.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">-->
+    <!--<link rel="stylesheet" href="/node_modules/jquery-bar-rating/themes/fontawesome-stars.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--<script src="/node_modules/jquery-bar-rating/jquery.barrating.js"></script>-->
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"> </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script>
+ 
+  </script>
+
+  <!--<script type="text/javascript" src="js/inputScript.js"></script>-->
+</head>
+
+<title>HotelExpress</title>
+<body>
+<script type="text/javascript" src="js/inputScript.js"></script>
 <h1><%- @title %></h1>
+<br/>
+<br/>
+<br/>
+
+<div class="city">
+<form action="http://localhost:5000/searchHotels" method="POST" enctype="mutlipart/form-data">
+    <p>Destination: <input id="cities" type="text" name="cityName" autofocus /> </p>
+    <p>Check-in Date: <input type="text" id="checkinDatePicker" name="checkinDate"></p>
+    <p>Length: <input type="text" id="stepper" name="length"></p>
+    <p>Min Rating: <select id="rating" name="minRating">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+        </select>
+        </p>
+
+    <input type="submit" />
+</form>
+  
+</div>
+
+<br/>
+<br/>
+<br/>
+
+
+</body>
+
+
+</html>
