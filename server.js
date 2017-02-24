@@ -31,7 +31,8 @@ app.get('/', function (req, res){
 });
 
 app.post('/', function (req, res){
-    API.getHotelsDeals(req.body.cityName, req.body.checkinDate, req.body.length)
+  console.log("RARING " + req.body.minRating)
+    API.getHotelsDeals(req.body.cityName, req.body.checkinDate, req.body.length, req.body.minRating)
     .then(function (deals) {
       console.log(deals);
       res.render('hotelDeals', {'deals' : deals.offers.Hotel})
