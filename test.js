@@ -1,5 +1,5 @@
 const assert = require('assert');
-const API = require('/APIHelper.js');
+const API = require('./APIHelper.js');
 
  API.getHotelsDeals("London", "", "", "")
  .then(function (deals) {

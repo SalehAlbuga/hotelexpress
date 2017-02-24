@@ -21,7 +21,6 @@ module.exports = class APIHelper {
                 },
                 json: true // Automatically parses the JSON string in the response 
             };
-            console.log('url == ' + options.uri + ' DEST == ' + dest + ' DATE2 == ' + minRating);
             request(options)
             .then(function (deals) {
                 resolve(deals);    
