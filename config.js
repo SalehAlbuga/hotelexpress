@@ -1,5 +1,6 @@
 module.exports = {
     hotelsAPI : 'https://offersvc.expedia.com/offers/v2/getOffers'
+    ExampleAPI : 'https://offersvc.expedia.com/offers/v2/getOffers'
 }
 
 
